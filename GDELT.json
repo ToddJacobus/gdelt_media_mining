@@ -1,0 +1,14 @@
+{ "type": "FeatureCollection", 
+	"features": [
+		{ "type": "Feature", 
+			"geometry": { 
+				"type": "Point", 
+				"coordinates": [46.7728, 24.6408] }, 
+			"properties": {  
+				"urlpubtimedate": "2018-01-30T19:00:00Z", 
+				"name": "Riyadh, Ar Riya?, Saudi Arabia", 
+				"urltone": 3.88, 
+				"url": "http://www.alriyadh.com/1658384", 
+				"mentionedthemes": ";SOC_POINTSOFINTEREST_PRISONS;WB_2495_DETENTION_PRISON_AND_CORRECTIONS_REFORM;WB_2470_PEACE_OPERATIONS_AND_CONFLICT_MANAGEMENT;WB_2432_FRAGILITY_CONFLICT_AND_VIOLENCE;WB_2490_NATIONAL_PROTECTION_AND_SECURITY;EDUCATION;SOC_POINTSOFINTEREST_UNIVERSITY;TAX_FNCACT_PRINCE;" } }
+
+] }
