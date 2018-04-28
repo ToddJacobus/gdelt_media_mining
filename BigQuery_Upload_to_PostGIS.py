@@ -37,13 +37,15 @@ client = bigquery.Client.from_service_account_json(credentials_path)
 	#for example: 20130101, 20130201, 20130301
 	#for each month we add 100 to the sqldate integer
 
-def getDateList(startYear,endYear): #endYear is exclusive ending
+def getDateList(startYear,endYear,partialYear=False): #endYear is exclusive ending
 	dates_dict = {}
 	dates = []
 	years = int(endYear-startYear)
 	for year in range(years):
 		year = str(startYear+year)
 		dates_dict[year] = ['01','02','03','04','05','06','07','08','09','10','11','12']
+	if partialYear:
+		dates_dict['2016']=['03','04','05','06','07','08','09','10','11','12']
 	for year,months in dates_dict.items():
 		for month in months:
 			dates.append(year+month+'01')
@@ -112,7 +114,7 @@ def getData(datelist):
 
 
 
-getData(getDateList(2014,2018))
+getData(getDateList(2016,2018), partialYear=True)
 
 # for k,v in getDateList(2013,2018).items(): print(k,v)
 # print(getDateList(2013,2018))
